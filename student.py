@@ -1,47 +1,14 @@
 
-student1 = {
-  first_name : "Fatih Murat"
-last_name : "Ergul"
-index_number : 35239
-nationality : "Turkish"
-starting_date : "2025-03-13"
-courses : "Object-oriented programing" }
-
-print(student1['firs_name'])
-print(student1['last_name'])
-print(student1['index_number'])
-print(student1['nationality'])
-print(student1['starting_date'])
-print(student1['courses '])
+def add_student(first_name, last_name, index_number, nationalty, starting_date, courses):
+    students.append({"first_name": first_name, "last_name": last_name, "index_number": index_number, "nationalty": nationalty, "startin_date": starting_date, "courses": courses})
 
 
+def display_students():
+    for student in students:
+        print(student["first_name"], student["last_name"], "-", student["index_number"])
 
-student2 = {
-    first_name : "akber"
-last_name : "cavus"
-index_number : 1111111
-nationality : "Turkish"
-starting_date : "2025-03-13"
-courses : "Object-oriented programing" }
 
-print(student2['firs_name'])
-print(student2['last_name'])
-print(student2['index_number'])
-print(student2['nationality'])
-print(student2['starting_date'])
-print(student2['courses ']) }
-
-student3 = {
-    first_name : "aslr"
-last_name : "cakss"
-index_number : 222222
-nationality : "Turkish"
-starting_date : "2025-03-13"
-courses : "Object-oriented programing" }
-
-print(student3['firs_name'])
-print(student3['last_name'])
-print(student3['index_number'])
-print(student3['nationality'])
-print(student3['starting_date'])
-print(student3['courses ']) }
+display_students()
+print("\nAdding a new student...\n")
+add_student("alex", "maxi", "112233")
+display_students()
